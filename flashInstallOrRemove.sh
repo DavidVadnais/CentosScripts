@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# The purpose of this script is to install/uninstall flash/hal for hulu on firefox in centos8
+# The purpose of this script is to install/uninstall flash for hulu on firefox in centos8
 
 [[ -z "${1}" ]] && echo "I cant work without an input of on or off" && exit 1
 
