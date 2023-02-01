@@ -11,3 +11,6 @@ export LATEST_CONTAINER=\
   -e SERVICE_EMAIL_KEY=${KEY} \
   particlechromo3d:latest) \
   && docker exec -it ${LATEST_CONTAINER} /bin/bash
+
+# prune dead and exec
+docker container prune && docker exec -it $(docker ps -aq) /bin/bash
